@@ -2,7 +2,7 @@
 
 Fast and lightweight skeleton framework for SwiftUI!
 
-![Example](https://github.com/SpectralDragon/EasySkeleton/blob/main/Resources/example.git)
+![Example](https://github.com/SpectralDragon/EasySkeleton/blob/main/Resources/example.gif?raw=true)
 
 ## How to use
 
