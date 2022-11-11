@@ -6,7 +6,7 @@ Fast and lightweight skeleton framework for SwiftUI!
 
 ## How to use
 
-We use simple system with environment to pass information about skeleton across all views, but you should tell your layout where and how it should display. Like example:
+We use a simple system with environment to pass information about the skeleton across all the views, but you should tell your layout where and how it should be displayed. Some examples:
 
 ```swift
 
@@ -29,7 +29,7 @@ struct ContentView: View {
 }
 ```
 
-But what if you want to design you skeleton? For your help we create a modifiers
+But what if you want to design your own skeleton? You can do so with modifiers:
 
 ```swift
 
@@ -39,7 +39,7 @@ Text("Some title")
 
 ```
 
-And what if you want to use a custom style or animation, for example? You can do it! Just pass extra arguments in your `setSkeleton` method:
+And what if for example, you want to use a custom style or animation ? Its easy! Just use the extra arguments in your `setSkeleton` method:
 
 
 ```swift
@@ -64,7 +64,7 @@ struct ContentView {
 
 ```
 
-Also, you can disable skeleton in your child view, when call `unskeletonable` method
+To disable the skeleton in your child views just call the `unskeletonable` method
 
 ```swift
 
@@ -88,7 +88,7 @@ struct ContentView: View {
 
 ```
 
-EasySkeleton greate fit to work with ForEach loop. You can apply native ForEach and modify it with `skeletonForEach` modifier:
+EasySkeleton it a great fit to work with ForEach loops. You can apply the native ForEach and modify it with the `skeletonForEach` modifier:
 
 ```swift
 struct NewsView: View {
@@ -104,7 +104,7 @@ struct NewsView: View {
 }
 ```
 
-And last, but not least, the main killer feature is reading your skeleton state on the fly using Environment feature!
+And last, but not least! The main killer feature: Reading your skeleton state on the fly using Environment feature!
 
 ```swift
 
