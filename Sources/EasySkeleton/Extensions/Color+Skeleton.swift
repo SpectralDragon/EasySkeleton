@@ -66,7 +66,7 @@ public extension Color {
 #elseif os(watchOS)
         return Color.secondary
 #elseif os(macOS)
-        return Color(.alternateSelectedControlColor)
+        return Color(NSColor(red: 0.82, green: 0.82, blue: 0.84, alpha: 1))
 #endif
     }
 }

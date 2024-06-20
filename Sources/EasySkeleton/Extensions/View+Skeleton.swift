@@ -59,7 +59,7 @@ private struct SkeletonShape: Shape {
     @State private var opacity: Double = 1
     
     func path(in rect: CGRect) -> Path {
-        RoundedRectangle(cornerRadius: self.skeleton.cornerRadius).path(in: rect)
+        skeleton.customShape?.path(in: rect) ?? RoundedRectangle(cornerRadius: self.skeleton.cornerRadius).path(in: rect)
     }
     
     var body: some View {

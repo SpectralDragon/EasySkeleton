@@ -10,7 +10,7 @@ import EasySkeleton
 
 struct ExampleView: View {
     
-    @State private var isSkeletonActive = false
+    @State private var isSkeletonActive = true
     
     var body: some View {
         ZStack {
@@ -50,7 +50,6 @@ struct ExampleView: View {
             .skeletonCornerRadius(16, style: .continuous)
             .setSkeleton(
                 self.$isSkeletonActive,
-                animationType: .solid(Color.black),
                 animation: Animation.default,
                 transition: AnyTransition.opacity
             )
@@ -136,8 +135,6 @@ struct HeaderView: View {
     }
 }
 
-struct ExampleView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExampleView()
-    }
+#Preview {
+    ExampleView()
 }
