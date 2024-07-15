@@ -53,8 +53,8 @@ public struct SkeletonViewModifier: ViewModifier {
     }
 }
 
-private struct SkeletonShape: Shape {
-    
+private struct SkeletonShape: Shape, @unchecked Sendable {
+
     @Environment(\.skeleton) private var skeleton
     @State private var opacity: Double = 1
     

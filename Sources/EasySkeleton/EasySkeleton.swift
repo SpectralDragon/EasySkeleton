@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct SkeletonData {
+public struct SkeletonData: @unchecked Sendable {
     
     public enum AnimationType {
         case solid(Color)
