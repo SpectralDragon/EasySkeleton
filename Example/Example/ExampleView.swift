@@ -51,7 +51,8 @@ struct ExampleView: View {
             .setSkeleton(
                 self.$isSkeletonActive,
                 animation: Animation.default,
-                transition: AnyTransition.opacity
+                transition: AnyTransition.opacity,
+                cornerRadius: 12
             )
             
             self.skeletonControlButton

@@ -110,11 +110,13 @@ public extension View {
         _ isActive: Binding<Bool>,
         animationType: SkeletonData.AnimationType = .gradient(Color.skeleton.makeGradient()),
         animation: Animation? = nil,
-        transition: AnyTransition? = nil
+        transition: AnyTransition? = nil,
+        cornerRadius: CGFloat = 0
     ) -> some View {
         self.transformEnvironment(\.skeleton) { skeleton in
             skeleton.skeletonActive = isActive.animation(animation)
             skeleton.animationType = animationType
+            skeleton.cornerRadius = cornerRadius
             animation.flatMap { skeleton.animation = $0 }
             transition.flatMap { skeleton.transition = $0 }
         }
