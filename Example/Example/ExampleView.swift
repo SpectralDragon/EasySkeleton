@@ -82,7 +82,6 @@ struct ExampleView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, idealHeight: 56)
-            .background(Color.white)
         }
     }
     

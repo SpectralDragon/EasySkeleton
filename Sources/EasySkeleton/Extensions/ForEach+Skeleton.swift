@@ -33,6 +33,24 @@ struct SkeletonForEachModifier<V: View>: ViewModifier {
 }
 
 public extension ForEach where Content: View {
+    /// Create ForEach view if skeleton is active.
+    func skeletonForEach<V: View>(
+        itemsCount: Int,
+        autoSkeletonable: Bool = true,
+        @ViewBuilder content: @escaping (Int) -> V
+    ) -> some View {
+        self.modifier(
+            SkeletonForEachModifier(
+                itemsCount: itemsCount,
+                autoSkeletonable: autoSkeletonable,
+                content: content
+            )
+        )
+    }
+}
+
+public extension View {
+    /// Create ForEach view if skeleton is active.
     func skeletonForEach<V: View>(
         itemsCount: Int,
         autoSkeletonable: Bool = true,

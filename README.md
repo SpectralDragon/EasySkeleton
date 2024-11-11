@@ -1,8 +1,12 @@
 # EasySkeleton
 
+[![Swift](https://img.shields.io/badge/Swift-5.9-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.-Orange?style=flat-square)
+[![Platforms](https://img.shields.io/badge/Platforms-macOS_iOS_tvOS_watchOS_visionOS-green?style=flat-square)](https://img.shields.io/badge/Platforms-macOS_iOS_tvOS_watchOS_visionOS-green?style=flat-square)
+
 Fast and lightweight skeleton framework for SwiftUI!
 
 ![Example](https://github.com/SpectralDragon/EasySkeleton/blob/main/Resources/example.gif?raw=true)
+![Example](https://github.com/SpectralDragon/EasySkeleton/blob/main/Resources/vision.png?raw=true)
 
 ## How to use
 
